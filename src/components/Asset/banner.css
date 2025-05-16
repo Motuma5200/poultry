@@ -1,0 +1,34 @@
+.banner{
+    display: flex;
+    justify-content: space-around;
+    height: 180px;
+    align-items: center;
+    background: linear-gradient(90deg, #eeb894, #e1f2ea22 60%);
+}
+
+.banner img{
+    width: 150px;
+    height: 170px;
+    border-radius: 10%;
+}
+
+.banner h1{
+    color: #eb6009;
+    font-size: 42px;
+}
+
+.banner h2{
+    font-size: 28px;
+    color: #55470a;
+    margin: 8px 0;
+}
+
+.banner button{
+    padding: 10px 25px;
+    border: none;
+    margin: 0 10px;
+    background-color: #e62e37;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+}

@@ -1,0 +1,137 @@
+.product_category{
+    display: flex;
+    flex-direction: column;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.product_category {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the overflowing content is hidden */
+}
+
+.product_banner_container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.product_banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 1.5s ease-in-out; /* Smooth horizontal transition */
+}
+
+.next_banner_button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.next_banner_button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* Make the arrow icon white */
+}
+
+.next_banner_button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.productCategory_sort_index{
+    display: flex;
+    justify-content: space-around;
+   align-items: flex-end;
+   height: 40px;
+   
+}
+
+.product_category_sort{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productCategory_sort_index p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #363d3d;
+}
+
+.product_category_sort p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #363d3f;
+    padding-right: 10px;
+}
+
+
+
+.selectSort{
+    padding: 5px;
+   border-radius: 10px;
+}
+
+.productCategory_sort_index p span{
+    font-weight: 700;
+     
+}
+
+.shopProduct_category{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shopProduct_category > * {
+    justify-self: center; /* Ensure individual items are centered */
+    text-align: center; /* Center text inside items */
+    max-width: 100%; /* Prevent oversized content */
+}
+
+
+.product_loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+    width: 223px;
+    height: 68px;
+    border-radius: 79px;
+    background: #ededed;
+    color: #788787;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+/*  Break points*/
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .shopProduct_category{
+        margin: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+ 
+}
+
+@media screen and (max-width: 576px) {
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+}
