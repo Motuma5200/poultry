@@ -106,6 +106,7 @@ const LoginSignUp = () => {
                       method: "POST",
                       headers: headers,
                       body: JSON.stringify(data),
+                      mode: "cors",
                   });
   
                   const result = await response.json().catch(() => {
