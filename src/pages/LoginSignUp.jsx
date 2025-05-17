@@ -89,7 +89,7 @@ const LoginSignUp = () => {
                   return;
               }
   
-              const url = "https://poultryfarms.liveblog365.com/signup.php";
+              const url = "https://poultryfarms.liveblog365.com/proxy.php";
               const headers = {
                   Accept: "application/json",
                   "Content-Type": "application/json",
